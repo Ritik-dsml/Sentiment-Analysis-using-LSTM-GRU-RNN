@@ -63,17 +63,6 @@ text = text.lower()
 text = re.sub(r'[^a-zA-Z\s]', '', text)
 ```
 
-⚠️ **Any mismatch here causes incorrect predictions**
-(This project explicitly solves that issue.)
-
----
-
-The issue is **Mermaid syntax**, not your architecture logic.
-Mermaid **does not like escaped parentheses `\(` `\)`** and sometimes breaks on extra spaces inside node text.
-
-Below is a **fully corrected, GitHub-compatible Mermaid version** of all three sections.
-You can paste this **as-is** into GitHub / Markdown / README.
-
 ---
 
 ## 🏗️ System Architecture
