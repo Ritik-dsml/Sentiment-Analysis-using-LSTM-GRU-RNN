@@ -1,0 +1,15 @@
+# frontend & web
+streamlit
+
+# deep learning
+tensorflow
+keras
+
+# data processing
+pandas
+numpy
+scikit-learn
+
+# visualization
+seaborn
+matplotlib
