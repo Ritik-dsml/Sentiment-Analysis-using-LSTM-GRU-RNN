@@ -86,6 +86,7 @@ flowchart LR
 
 ### 🔹 Training Pipeline
 
+```mermaid
 flowchart LR
     A[Raw Tweets] --> B[Text Cleaning]
     B --> C[Tokenizer Fit]
@@ -94,7 +95,7 @@ flowchart LR
     E --> F[Softmax Output Layer]
     F --> G[Model Saved \( .h5 \)]
     C --> H[Tokenizer Saved \( .pkl \)]
-
+```
 ---
 
 ### 🔹 Inference Pipeline (CLI & Streamlit)
@@ -133,7 +134,7 @@ flowchart LR
 | ------------------------------- | ----------- |
 | that boy is having nice haircut | Positive 😊 |
 | he is a bad boy                 | Negative 😞 |
-| he is studing                   | Neutral 😐  |
+| They are Boys                   | Neutral 😐  |
 
 ---
 
