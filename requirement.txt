@@ -2,7 +2,7 @@
 streamlit
 
 # deep learning
-tensorflow
+tensorflow ==2.20.0
 keras
 
 # data processing
