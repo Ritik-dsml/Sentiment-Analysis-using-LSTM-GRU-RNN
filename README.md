@@ -93,7 +93,6 @@ flowchart LR
     D --> E[Train RNN / LSTM / GRU]
     E --> F[Softmax Output Layer]
     F --> G[Model Saved \( .h5 \)]
-    C --> H[Tokenizer Saved \( .pkl \)]
 ```
 
 ---
