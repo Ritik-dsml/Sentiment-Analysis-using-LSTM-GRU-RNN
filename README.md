@@ -85,7 +85,6 @@ flowchart LR
 ---
 
 ### 🔹 Training Pipeline
-
 ```mermaid
 flowchart LR
     A[Raw Tweets] --> B[Text Cleaning]
@@ -93,8 +92,8 @@ flowchart LR
     C --> D[Padding]
     D --> E[Train RNN / LSTM / GRU]
     E --> F[Softmax Output Layer]
-    F --> G[Model Saved (.h5)]
-    G --> H[Tokenizer Saved (.pkl)]
+    F --> G[Model Saved \( .h5 \)]
+    C --> H[Tokenizer Saved \( .pkl \)]
 ```
 
 ---
