@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 streamlit==1.29.0
 tensorflow==2.13.0
 numpy==1.25.2
@@ -6,3 +7,20 @@ scikit-learn==1.3.1
 nltk==3.9.1
 matplotlib==3.8.1
 seaborn==0.12.2
+=======
+# frontend & web
+streamlit
+
+# deep learning
+tensorflow ==2.20.0
+keras
+
+# data processing
+pandas
+numpy
+scikit-learn
+
+# visualization
+seaborn
+matplotlib
+>>>>>>> 55477c1355c035368d027c9f0fb7626e1c33af85
