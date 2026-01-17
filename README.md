@@ -68,6 +68,14 @@ text = re.sub(r'[^a-zA-Z\s]', '', text)
 
 ---
 
+The issue is **Mermaid syntax**, not your architecture logic.
+Mermaid **does not like escaped parentheses `\(` `\)`** and sometimes breaks on extra spaces inside node text.
+
+Below is a **fully corrected, GitHub-compatible Mermaid version** of all three sections.
+You can paste this **as-is** into GitHub / Markdown / README.
+
+---
+
 ## 🏗️ System Architecture
 
 ### 🔹 High-Level Architecture
@@ -76,7 +84,7 @@ text = re.sub(r'[^a-zA-Z\s]', '', text)
 flowchart LR
     A[User Input Text] --> B[Text Cleaning]
     B --> C[Tokenizer]
-    C --> D[Padding & Sequencing]
+    C --> D[Padding and Sequencing]
     D --> E[Deep Learning Model]
     E --> F[Softmax Output]
     F --> G[Sentiment Label]
@@ -93,8 +101,8 @@ flowchart LR
     C --> D[Padding]
     D --> E[Train RNN / LSTM / GRU]
     E --> F[Softmax Output Layer]
-    F --> G[Model Saved \( .h5 \)]
-    C --> H[Tokenizer Saved \( .pkl \)]
+    F --> G[Model Saved .h5]
+    C --> H[Tokenizer Saved .pkl]
 ```
 ---
 
@@ -111,8 +119,11 @@ flowchart LR
     G --> H[Sentiment Output]
 ```
 
-> 🧠 **Key Engineering Insight:**
-> Training, CLI, and Streamlit use the **exact same pipeline**, preventing prediction drift.
+---
+
+### 🧠 Key Engineering Insight
+
+**Training, CLI, and Streamlit use the exact same preprocessing and inference pipeline, ensuring zero prediction drift across environments.**
 
 ---
 
